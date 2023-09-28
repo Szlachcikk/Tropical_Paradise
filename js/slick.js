@@ -1,5 +1,6 @@
 // do pliku slick.js
 
+
 $(document).ready(function () {
     $('.reviews__boxes').slick({
         slidesToShow: 1,
