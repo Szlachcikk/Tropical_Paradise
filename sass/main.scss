@@ -1,7 +1,6 @@
 @import './colors';
 @import './components';
 @import './mixins';
-
 *,
 *::after,
 *::before {
@@ -17,7 +16,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
-
 // Nav
 .burger-btn {
 	position: fixed;
@@ -62,7 +60,6 @@ body {
 		}
 	}
 }
-
 .nav {
 	position: fixed;
 	top: 0;
@@ -79,7 +76,6 @@ body {
 	&--active {
 		transform: translateX(0);
 	}
-
 	&__item {
 		position: relative;
 		display: block;
@@ -105,7 +101,6 @@ body {
 		}
 	}
 }
-
 @keyframes navItemsAnimation {
 	from {
 		transform: translateX(200%);
@@ -117,7 +112,11 @@ body {
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
-
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
 //header
 .header {
 	position: relative;
@@ -157,9 +156,7 @@ body {
 	}
 }
 //main
-
 //dreams section
-
 .dreams {
 	&__box {
 		display: flex;
@@ -177,9 +174,7 @@ body {
 		font-size: 1.4rem;
 	}
 }
-
 //hero img
-
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
@@ -196,9 +191,7 @@ body {
 		padding: 1em 0;
 	}
 }
-
 //Islands
-
 .islands {
 	&__card {
 		position: relative;
@@ -248,7 +241,6 @@ body {
 				}
 			}
 		}
-
 		&-info {
 			position: absolute;
 			top: 0;
@@ -283,7 +275,6 @@ body {
 					}
 				}
 			}
-
 			&-btn {
 				@include islandsCardStyles;
 				bottom: 2em;
@@ -301,13 +292,11 @@ body {
 		}
 	}
 }
-
 // offers
 .offers {
 	position: relative;
 	overflow: hidden;
 	@include heroImages('../img/maldives-herosmall.jpg');
-
 	.section-heading {
 		color: $pure-white;
 	}
@@ -356,7 +345,6 @@ body {
 		}
 	}
 }
-
 //reviews
 @media (max-width: 767px) {
 	.reviews.section-padding {
@@ -400,7 +388,6 @@ body {
 	}
 }
 //contact
-
 .contact {
 	position: relative;
 	background-color: $light-white;
@@ -409,7 +396,6 @@ body {
 	.white-block-left {
 		background-color: $dark;
 	}
-
 	&__form,
 	&__form-top {
 		display: flex;
@@ -447,7 +433,6 @@ body {
 	}
 }
 //footer
-
 .footer {
 	color: $pure-white;
 	background-color: $dark;
@@ -489,11 +474,9 @@ body {
 		text-align: center;
 	}
 }
-
 // =====================
 // Media
 //======================
-
 @media (min-width: 576px) {
 	.dreams {
 		&__box {
